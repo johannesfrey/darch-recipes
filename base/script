@@ -7,7 +7,7 @@ set -e
 pacman-key --init
 pacman-key --populate archlinux
 
-# Resyn the database
+# Resync the database
 pacman -Sy --noconfirm
 # Update gpg keys before we install anything else.
 pacman -S --noconfirm archlinux-keyring
@@ -33,7 +33,7 @@ curl https://gist.githubusercontent.com/pauldotknopf/ff8e986225ab2f264acea1a5bb0
 install_aur_helper
 
 # Install Darch
-install_aur_package darch
+install_aur_packages darch
 # We don't need grub as a bootloader, but we use
 # their helper scripts in Darch to generate menu entries.
 install_packages grub
