@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 
 install_packages() {
-    pacman -S --noconfirm $*
+    pacman -S --noconfirm "$@"
 }
 
 install_aur_helper() {
     pacman -S --noconfirm git
     git clone https://aur.archlinux.org/trizen.git ~/trizen
-    pushd ~/trizen
+    pushd ~/trizen || exit
     makepkg -si --noconfirm
-    popd
+    popd || exit
     rm -r ~/trizen
 }
 
-install_aur_package() {
-    trizen -S --noconfirm --noedit $1
+install_aur_packages() {
+    trizen -S --noconfirm --noedit "$@"
 }
