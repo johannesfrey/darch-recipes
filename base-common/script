@@ -22,7 +22,7 @@ install_packages zsh zsh-completions
 
 # Add our users
 groupadd guests
-useradd -m -G adm,ftp,games,http,log,rfkill,sys,systemd-journal,users,uucp,wheel -s /bin/zsh pknopf
+useradd -m -G adm,ftp,games,http,log,rfkill,sys,systemd-journal,users,uucp,wheel -s /bin/zsh jotef
 useradd -m -G guests,users -s /bin/zsh guest
 
 # TODO: restrict access to su/sudo commands for non-wheel users
@@ -30,10 +30,10 @@ useradd -m -G guests,users -s /bin/zsh guest
 # Set the root password
 if [ -n  "$USER_PASSWD" ]; then
     echo "Using user password provided by environment variable..."
-    echo -en "$USER_PASSWD\n$USER_PASSWD" | passwd pknopf
+    echo -en "$USER_PASSWD\n$USER_PASSWD" | passwd jotef
 else
     echo "Using default user password..."
-    echo -en "password\npassword" | passwd pknopf
+    echo -en "password\npassword" | passwd jotef
 fi
 
 # Install fresh copy of dotfiles for pknopf.
@@ -46,7 +46,7 @@ runuser -l pknopf -c "rm -r ~/.dotfiles/dotbot"
 
 # Setup sudo
 install_packages sudo
-echo "pknopf ALL=(ALL) ALL" >> /etc/sudoers
+echo "jotef ALL=(ALL) ALL" >> /etc/sudoers
 
 # Enable ssh
 install_packages openssh
