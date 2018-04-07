@@ -45,8 +45,10 @@ install_packages openssh
 systemctl enable sshd
 
 # Fonts
-install_packages ttf-ms-fonts
-install_packages nerd-fonts-complete
+install_aur_packages \
+  nerd-fonts-complete \
+  ttf-ms-fonts \
+  ttf-hack-powerline-git
 
 # Timezone
 rm /etc/localtime
