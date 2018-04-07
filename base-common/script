@@ -36,14 +36,6 @@ else
     echo -en "password\npassword" | passwd jotef
 fi
 
-# Install fresh copy of dotfiles for pknopf.
-# dotbot requires Python.
-install_packages python
-runuser -l pknopf -c "git clone https://github.com/pauldotknopf/dotfiles.git ~/.dotfiles"
-runuser -l pknopf -c "cd ~/.dotfiles && ./install"
-# Now that they are installed, removed dotbot to clean up the image.
-runuser -l pknopf -c "rm -r ~/.dotfiles/dotbot"
-
 # Setup sudo
 install_packages sudo
 echo "jotef ALL=(ALL) ALL" >> /etc/sudoers
