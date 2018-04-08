@@ -35,5 +35,6 @@ install_packages \
   dunst \
   xsel \
   rxvt-unicode \
+  termite \
   tmux
 install_aur_packages polybar
