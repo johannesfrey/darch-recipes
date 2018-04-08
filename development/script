@@ -19,6 +19,7 @@ install_packages \
   autopep8 \
   go \
   go-tools \
+  bazel
 
 install_aur_packages \
   libcgroup \
