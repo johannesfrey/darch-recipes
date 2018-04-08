@@ -7,6 +7,7 @@ set -e
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen  
 echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen  
 locale-gen
+echo "LANG=en_US.UTF-8" > /etc/locale.conf
 
 # Set the root password
 if [ -n  "$ROOT_PASSWD" ]; then
