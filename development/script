@@ -12,6 +12,7 @@ install_packages \
   wget \
   jq \
   pwgen \
+  stow \
   cgmanager \
   polkit \
   python \
