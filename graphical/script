@@ -1,0 +1,36 @@
+#!/bin/bash
+set -e
+
+. ../common
+
+# Enable audio
+install_packages pulseaudio
+install_aur_packages pulseaudio-ctl
+
+# Intel graphics only
+install_packages xf86-video-intel
+
+# Touchpad
+install_packages xf86-input-synaptics
+
+# Use X11. Wayland is newer, but options for VNC aren't good.
+install_packages \
+  xorg-server \
+  xorg-xrandr \
+  xorg-xinit \
+  xorg-xset \
+  xsel
+
+# Display auto-detector
+install_aur_packages autorandr-git
+
+# Install basic graphical stuff and terminal emulator.
+install_packages \
+  rofi \
+  compton \
+  thunar \
+  dunst \
+  rxvt-unicode \
+  tmux
+
+install_aur_packages hsetroot polybar
