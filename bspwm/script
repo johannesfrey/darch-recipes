@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+. ../common
+
+install_packages \
+  bspwm \
+  sxhkd \
