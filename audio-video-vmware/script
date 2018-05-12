@@ -1,0 +1,28 @@
+#!/bin/bash
+set -e
+
+. ../common
+
+# Enable audio
+install_packages pulseaudio
+install_aur_packages pulseaudio-ctl
+
+# Graphics and mouse
+install_packages \
+  xf86-video-vmware \
+  xf86-input-vmmouse \
+  mesa
+
+# Open-VM tools
+install_packages \
+  open-vm-tools
+
+# Open-VM tools read version information from /etc/arch-release
+mkdir -p /etc/systemd/system/vmtoolsd.service.d/
+cat <<EOF > /etc/systemd/system/vmtoolsd.service.d/arch-release.conf
+[Service]
+ExecStartPre=/bin/bash -c "cat /proc/version > /etc/arch-release"
+EOF
+
+# Enable VMware stuff
+systemctl enable vmware-vmblock-fuse vmtoolsd

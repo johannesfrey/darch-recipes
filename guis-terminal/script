@@ -1,0 +1,15 @@
+#!/bin/bash
+set -e
+
+. ../common
+
+# Install basic graphical stuff and terminal emulator.
+install_packages \
+  rofi \
+  compton \
+  thunar \
+  dunst \
+  rxvt-unicode \
+  tmux
+
+install_aur_packages polybar

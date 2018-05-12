@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+. ../common
+
+# Enable audio
+install_packages pulseaudio
+install_aur_packages pulseaudio-ctl
+
+# Intel graphics only
+install_packages xf86-video-intel

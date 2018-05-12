@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+
+. ../common
+
+# Use X11. Wayland is newer, but options for VNC aren't good.
+install_packages \
+  xorg-server \
+  xorg-xrandr \
+  xorg-xinit \
+  xorg-xset \
+  xsel
+
+install_aur_packages \
+  autorandr-git \
+  hsetroot

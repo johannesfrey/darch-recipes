@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+
+. ../common
+
+# Enable audio
+install_packages pulseaudio
+install_aur_packages pulseaudio-ctl
+
+# VirtualBox guest additions
+install_packages \
+  virtualbox-guest-utils \
+  virtualbox-guest-modules-arch
+
+# Enable loading of VirtualBox kernel modules
+systemctl enable vboxservice
