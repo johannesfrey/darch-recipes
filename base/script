@@ -17,8 +17,7 @@ pacman -Syu --noconfirm
 # Let's update the mirrors.
 install_packages curl sed
 curl "https://www.archlinux.org/mirrorlist/?country=DE&protocol=http&protocol=https&ip_version=4&use_mirror_status=on" \
-  | sed -e "s/#Server/Server/g" | sed -E 's/^(Server.*selfnet.de.*)/#\1/' > /tmp/mirrorlist
-rankmirrors -v -n 10 /tmp/mirrorlist > /etc/pacman.d/mirrorlist
+  | sed -e "s/#Server/Server/g" | sed -E 's/^(Server.*selfnet.de.*)/#\1/' > /etc/pacman.d/mirrorlist
 
 # Run base install, with dev tools. The "bootstrap" fs doesn't contain everything, just what you need to bootstrap.
 install_packages base base-devel
