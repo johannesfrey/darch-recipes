@@ -9,6 +9,7 @@ install_packages \
   xorg-xrandr \
   xorg-xinit \
   xorg-xset \
+  xorg-xprop \
   xsel
 
 install_aur_packages \
