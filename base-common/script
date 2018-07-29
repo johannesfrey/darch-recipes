@@ -51,7 +51,8 @@ systemctl enable sshd
 install_aur_packages \
   nerd-fonts-complete \
   ttf-ms-fonts \
-  ttf-hack-powerline-git
+  ttf-hack-powerline-git \
+  ttf-font-awesome-4
 
 # Timezone
 rm /etc/localtime
