@@ -24,8 +24,6 @@ install_packages zsh zsh-completions
 # Add our users
 groupadd guests
 useradd -m -G adm,ftp,games,http,log,rfkill,sys,systemd-journal,users,uucp,wheel -s /bin/zsh jotef
-mkdir /home/jotef
-chown -R jotef:jotef /home/jotef
 useradd -m -G guests,users -s /bin/zsh guest
 
 # TODO: restrict access to su/sudo commands for non-wheel users
