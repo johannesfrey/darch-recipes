@@ -39,7 +39,7 @@ fi
 
 # Setup sudo
 install_packages sudo
-echo "jotef ALL=(ALL) ALL" >> /etc/sudoers
+echo "jotef ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 # Enable ssh
 install_packages openssh
