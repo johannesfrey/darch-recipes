@@ -14,6 +14,7 @@ install_packages \
   pwgen \
   stow \
   cgmanager \
+  gnome-keyring \
   polkit \
   sshuttle \
   python \
