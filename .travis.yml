@@ -11,4 +11,4 @@ before_install:
 - sudo runc --version
 - sudo darch images pull godarch/arch:latest
 script:
-- travis_wait 30 "./ci"
+- "./ci"
