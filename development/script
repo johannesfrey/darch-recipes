@@ -7,6 +7,7 @@ install_packages \
   rsync \
   htop \
   iotop \
+  tcpdump \
   vim \
   git \
   wget \
