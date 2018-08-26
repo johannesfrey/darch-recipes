@@ -9,9 +9,9 @@ install_packages \
   xorg-xrandr \
   xorg-xinit \
   xorg-xset \
+  xorg-xsetroot \
   xorg-xprop \
   xsel
 
 install_aur_packages \
-  autorandr-git \
-  hsetroot
+  autorandr-git
