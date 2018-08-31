@@ -23,10 +23,15 @@ install_packages \
   autopep8 \
   go \
   go-tools \
-  bazel
+  godep \
+  bazel \
+  docker
 
 install_aur_packages \
   libcgroup \
   visual-studio-code-bin \
   google-chrome \
   rambox-bin
+
+# Add user to docker group in order to run it without sudo
+usermod -aG docker jotef
