@@ -35,3 +35,4 @@ install_aur_packages \
 
 # Add user to docker group in order to run it without sudo
 usermod -aG docker jotef
+systemctl enable docker
