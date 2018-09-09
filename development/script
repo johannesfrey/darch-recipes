@@ -25,7 +25,8 @@ install_packages \
   go-tools \
   godep \
   bazel \
-  docker
+  docker \
+  firefox
 
 install_aur_packages \
   libcgroup \
