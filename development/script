@@ -26,9 +26,7 @@ install_packages \
   godep \
   bazel \
   docker \
-  firefox
-
-install_aur_packages \
+  firefox \
   libcgroup \
   visual-studio-code-bin \
   google-chrome \

@@ -11,7 +11,5 @@ install_packages \
   xorg-xset \
   xorg-xsetroot \
   xorg-xprop \
-  xsel
-
-install_aur_packages \
+  xsel \
   autorandr-git

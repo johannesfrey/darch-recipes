@@ -4,8 +4,7 @@ set -e
 . ../common
 
 # Enable audio
-install_packages pulseaudio
-install_aur_packages pulseaudio-ctl
+install_packages pulseaudio pulseaudio-ctl
 
 # Graphics and mouse
 install_packages \
