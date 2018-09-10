@@ -23,7 +23,7 @@ install_packages \
   autopep8 \
   go \
   go-tools \
-  godep \
+  dep \
   bazel \
   docker \
   firefox \
