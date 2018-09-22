@@ -15,7 +15,9 @@ install_packages \
   jq \
   pwgen \
   keepassxc \
+  yubikey-personalization-gui \
   stow \
+  shellcheck \
   cgmanager \
   gnome-keyring \
   polkit \
