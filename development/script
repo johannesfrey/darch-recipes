@@ -22,6 +22,7 @@ install_packages \
   gnome-keyring \
   polkit \
   sshuttle \
+  sshfs \
   python \
   autopep8 \
   go \
