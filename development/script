@@ -23,6 +23,7 @@ install_packages \
   polkit \
   sshuttle \
   sshfs \
+  pandoc \
   python \
   autopep8 \
   go \
