@@ -12,6 +12,7 @@ install_packages \
   vim \
   git \
   wget \
+  bzr \
   jq \
   pwgen \
   keepassxc \
