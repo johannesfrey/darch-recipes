@@ -12,9 +12,10 @@ install_packages \
   xf86-input-vmmouse \
   mesa
 
-# Open-VM tools
+# Open-VM tools and gtkmm3 (for copy&paste)
 install_packages \
-  open-vm-tools
+  open-vm-tools \
+  gtkmm3
 
 # Open-VM tools read version information from /etc/arch-release
 mkdir -p /etc/systemd/system/vmtoolsd.service.d/
