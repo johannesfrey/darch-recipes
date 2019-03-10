@@ -50,7 +50,9 @@ install_packages \
   nerd-fonts-complete \
   ttf-ms-fonts \
   ttf-hack-powerline-git \
-  ttf-font-awesome-4
+  ttf-font-awesome-4 \
+  ttf-fira-code \
+  otf-fira-code
 
 # Timezone
 rm /etc/localtime
