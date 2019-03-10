@@ -42,3 +42,6 @@ install_packages \
 # Add user to docker group in order to run it without sudo
 usermod -aG docker jotef
 systemctl enable docker
+
+# Enable user_allow_other in order to mount via sshfs
+sed -i -E 's/^#(user_allow_other)/\1/' /etc/fuse.conf
