@@ -17,6 +17,7 @@ install_packages \
   jq \
   pwgen \
   keepassxc \
+  pass \
   yubikey-personalization-gui \
   stow \
   shellcheck \
@@ -38,6 +39,8 @@ install_packages \
   visual-studio-code-bin \
   google-chrome \
   rambox-bin
+
+install_aur_packages jsonnet
 
 # Add user to docker group in order to run it without sudo
 usermod -aG docker jotef
